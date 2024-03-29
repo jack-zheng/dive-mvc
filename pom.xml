@@ -11,6 +11,10 @@
     <modules>
         <module>p01-tomcat-setup</module>
         <module>p02-spring-test</module>
+        <module>p03-mini-spring</module>
+        <module>p04-aop-test</module>
+        <module>p05-tx-test</module>
+        <module>p06-h2-setup</module>
     </modules>
 
     <properties>
