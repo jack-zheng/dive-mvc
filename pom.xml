@@ -15,6 +15,8 @@
         <module>p04-aop-test</module>
         <module>p05-tx-test</module>
         <module>p06-h2-setup</module>
+        <module>p07-cycle-dependency</module>
+        <module>p08-embed-tomcat</module>
     </modules>
 
     <properties>
