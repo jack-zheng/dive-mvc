@@ -10,28 +10,19 @@
     </parent>
 
     <groupId>org.dive</groupId>
-    <artifactId>p08-embed-tomcat</artifactId>
+    <artifactId>p13-json-test</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <tomcat.version>10.1.19</tomcat.version>
     </properties>
 
     <dependencies>
-        <!--tomcat 引用已经包含了 servlet api-->
         <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-core</artifactId>
-            <version>${tomcat.version}</version>
-<!--            <scope>provided</scope>-->
-        </dependency>
-        <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-jasper</artifactId>
-            <version>${tomcat.version}</version>
-<!--            <scope>provided</scope>-->
+            <groupId>org.skyscreamer</groupId>
+            <artifactId>jsonassert</artifactId>
+            <version>1.5.1</version>
         </dependency>
     </dependencies>
 </project>

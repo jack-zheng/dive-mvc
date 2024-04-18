@@ -17,6 +17,13 @@
         <module>p06-h2-setup</module>
         <module>p07-cycle-dependency</module>
         <module>p08-embed-tomcat</module>
+        <module>p09-tomcat-spring</module>
+        <module>p10-tomcat-mvc-no-xml</module>
+        <module>p11-web-scope</module>
+        <module>p12-controller-proxy</module>
+        <module>p13-json-test</module>
+        <module>p14-java-basic</module>
+        <module>p15-ioc-test</module>
     </modules>
 
     <properties>
@@ -42,6 +49,12 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.32</version>
+            <scope>provided</scope>
+        </dependency>
 
     </dependencies>
 

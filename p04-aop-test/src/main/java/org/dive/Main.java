@@ -10,6 +10,7 @@ public class Main {
         System.out.println("============== start debug ==============");
         ServiceA serviceA = (ServiceA) context.getBean("serviceA");
 
-        System.out.println(serviceA.getClass());
+//        System.out.println(serviceA.getClass());
+        serviceA.test();
     }
 }

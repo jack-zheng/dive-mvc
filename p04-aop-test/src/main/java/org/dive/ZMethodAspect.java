@@ -1,15 +1,13 @@
 package org.dive;
 
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
 
 @Component
 @Aspect
-public class MethodAspect {
+public class ZMethodAspect {
     @Before("execution(* org.dive.*.*(..))")
     public void before(JoinPoint joinPoint) {
         System.out.println("---------- JoinPoint: " + joinPoint.getSignature());

@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>org.dive</groupId>
-    <artifactId>p08-embed-tomcat</artifactId>
+    <artifactId>p10-tomcat-mvc-no-xml</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -25,13 +25,26 @@
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-core</artifactId>
             <version>${tomcat.version}</version>
-<!--            <scope>provided</scope>-->
+            <!--            <scope>provided</scope>-->
         </dependency>
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
             <version>${tomcat.version}</version>
-<!--            <scope>provided</scope>-->
+            <!--            <scope>provided</scope>-->
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>6.1.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>6.1.3</version>
         </dependency>
     </dependencies>
+
 </project>
