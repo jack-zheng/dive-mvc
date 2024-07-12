@@ -1,0 +1,4 @@
+"ACCOUNT_UUID","LOGIN_NAME","LOGIN_METHOD","LOCALE","TIME_ZONE","PERSON_ID","ACCOUNT_STATUS","ACCOUNT_TYPE","EXTRA"
+"帐户标识","登录名","登录方法","区域语言设置","时区","个人 ID （只读）","状态 （只读）","帐户类型 （只读）","EXTRA"
+"c9862270-2948-4976-b1bf-08ced0c61446","!@#$%!@#$%^&*()",,"en_US","PST","ENT100000880User22","ACTIVE","EMPLOYEE","abc"
+"d59a9fe7-e497-4a3b-9271-9a23d67101b8","TestUser24042501",,"en_US","PST","ENT100000880User11","ACTIVE","EMPLOYEE","abc"

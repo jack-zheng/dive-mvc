@@ -23,7 +23,8 @@ public class TestProxy {
 @ComponentScan("org.dive.proxy")
 class Config {
     @Bean
-    @Scope(value="prototype", proxyMode = ScopedProxyMode.TARGET_CLASS)
+    @Scope(value="prototype")
+//    @Scope(value="prototype", proxyMode = ScopedProxyMode.TARGET_CLASS)
     public InnerBean innerBean() {
         return new InnerBean(new Date());
     }

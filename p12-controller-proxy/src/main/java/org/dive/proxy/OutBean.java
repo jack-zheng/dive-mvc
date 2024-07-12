@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class OutBean {
-    @Autowired
+//    @Autowired
     private InnerBean innerBean;
 
     public InnerBean getInnerBean() {

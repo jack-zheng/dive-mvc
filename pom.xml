@@ -24,6 +24,11 @@
         <module>p13-json-test</module>
         <module>p14-java-basic</module>
         <module>p15-ioc-test</module>
+        <module>p16-mybatis-xml</module>
+        <module>p17-mybatis-annotation</module>
+        <module>p18-mybatis-complex</module>
+        <module>p19-mybatis-one-many</module>
+        <module>p20-3rd-lib</module>
     </modules>
 
     <properties>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.dive.dao.DepartmentsMapper">
+    <select id="getDepartments" resultType="org.dive.model.Department">
+        select * from Departments
+    </select>
+
+    <insert id="addDepartment" parameterType="org.dive.model.Department">
+        insert into Departments (dept_no, dept_name) values (#{deptNo}, #{deptName})
+    </insert>
+
+    <delete id="updateDepartment" parameterType="org.dive.model.Department">
+        update Departments set dept_name = #{deptName} where dept_no = #{deptNo}
+    </delete>
+
+    <update id="deleteDepartment" parameterType="String">
+        delete from Departments where dept_no = #{deptNo}
+    </update>
+
+<!--    <resultMap id="DepRetMap" type="Department">-->
+<!--        <id column="dept_no" property="deptNo"/>-->
+<!--        <result column="dept_name" property="deptName"/>-->
+<!--    </resultMap>-->
+
+<!--    <select id="getDepartmentByDeptNo" parameterType="String" resultMap="DepRetMap">-->
+<!--        select * from Departments where dept_no = #{deptNo}-->
+<!--    </select>-->
+
+    <select id="getDepartmentByDeptNo" parameterType="String" resultType="org.dive.model.Department">
+        select * from Departments where dept_no = #{deptNo}
+    </select>
+
+    <select id="getPagedDepartments" parameterType="map" resultType="org.dive.model.Department">
+        select * from Departments limit #{offset}, #{limit}
+    </select>
+</mapper>
